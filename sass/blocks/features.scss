@@ -1,0 +1,86 @@
+.features {
+  @include clearfix;
+}
+
+.features__top-block {
+  position: relative;
+  padding-bottom: 37px;
+
+  &::after {
+    content: '';  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 37px;
+    background-color: $bg-lightblu;
+    background-image: url('../img/features-triangle.svg');
+    background-size: auto 37px;
+    background-position: center;
+  }
+
+  @media #{$tablet-width} {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.features__slogan {
+
+}
+
+.features__intro-text {
+  margin: 0;
+}
+
+.features__item {
+  float: left;
+  background-color: $bg-white;
+
+  &--blu-bg {
+    background-color: $bg-lightblu;
+  }
+
+  @media #{$tablet-width} {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media #{$desktop-width} {
+    width: 400px;
+  }
+}
+
+.features__img {
+  float: left;
+  width: 320px;
+  height: 260px;
+  
+  @media #{$tablet-width} {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media #{$desktop-width} {
+    width: 800px;
+  }
+}
+
+.features__name {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 45px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.features__desc {
+  font-size: 14px;
+}
+
+.features__number {
+  display: block;
+}
+
