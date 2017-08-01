@@ -1,0 +1,36 @@
+.photoes {
+  @include clearfix;
+}
+
+.photoes__list {
+  @include reset-list;
+}
+
+.photoes__photo-item {
+  @media #{$tablet-width} {
+    float: left;
+    width: 50%;
+
+    &--big {
+      width: 100%;
+    }
+  }
+
+  @media #{$tablet-width} {
+    float: left;
+    width: 33%;
+
+    &--big {
+      width: 100%;
+    }
+  }
+}
+
+.photoes__list img {
+  width: 280px;
+  height: 280px;
+
+  @media #{$tablet-width} {
+
+  }
+}

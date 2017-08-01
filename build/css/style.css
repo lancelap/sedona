@@ -581,3 +581,31 @@ img {
 @media (min-width: 768px) {
   .main-footer-social {
     float: left; } }
+
+.photoes::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.photoes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+@media (min-width: 768px) {
+  .photoes__photo-item {
+    float: left;
+    width: 50%; }
+    .photoes__photo-item--big {
+      width: 100%; } }
+
+@media (min-width: 768px) {
+  .photoes__photo-item {
+    float: left;
+    width: 33%; }
+    .photoes__photo-item--big {
+      width: 100%; } }
+
+.photoes__list img {
+  width: 280px;
+  height: 280px; }
