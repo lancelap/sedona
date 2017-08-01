@@ -1,5 +1,6 @@
 .hashtag {
   @media #{$tablet-width} {
     float: left;
+    width: 300px;
   }
 }

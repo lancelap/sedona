@@ -35,50 +35,75 @@
       </div>
     </header>
     <main>
-      <div class="intro-text">
-        <h1 class="intro-text__title">
+      <div class="page-headline">
+        <h1 class="page-headline__title">
           Оставьте свой отзыв
         </h1>
-        <p class="intro-text__paragraph">
+        <p class="page-headline__subtitle">
           Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
-      <section class="photoes">
-        <ul class="photoes__list">
-          <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-1-mobile.jpg" alt="Фото 1" width="280px" height="280px">
-            <h2 class="photoes__title">Заголовок</h2>
-            <span class="photoes__author">Anon</span>
-            <span class="photoes__likes"> 777</span>
-          </li>
-          <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-2-mobile.jpg" alt="Фото 2" width="280px" height="280px">
-            <h2 class="photoes__title">Заголовок</h2>
-            <span class="photoes__author">Anon</span>
-            <span class="photoes__likes"> 777</span>
-          </li>
-          <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-3-mobile.jpg" alt="Фото 3" width="280px" height="280px">
-            <h2 class="photoes__title">Заголовок</h2>
-            <span class="photoes__author">Anon</span>
-            <span class="photoes__likes"> 777</span>
-          </li>
-          <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-4-mobile.jpg" alt="Фото 4" width="280px" height="280px">
-            <h2 class="photoes__title">Заголовок</h2>
-            <span class="photoes__author">Anon</span>
-            <span class="photoes__likes"> 777</span>
-          </li>
-        </ul>
-      </section>
-      <section class="video-box">
-        <h2 class="video-box__title">Все еще сомневаетесь?</h2>
-        <p class="video-box__desk">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-        <video class="video-box__video" src=""></video>
-      </section>
+      <form class="form-review" action="#" method="post">
+        <fieldset class="form-review__fieldset">
+          <legend class="form-review__legend">Представьтесь, пожалуйста:</legend>
+           <label class="form-review__label">
+            Имя
+            <input type="text" name="name" placeholder="Петр">
+          </label>
+           <label class="form-review__label">
+            Фамилия
+            <input type="text" name="surname" placeholder="Иванов">
+          </label>
+           <label class="form-review__label">
+            Отчество
+            <input type="text" name="patronim" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <legend class="form-review__legend">Контактная информация:</legend>
+           <label class="form-review__label">
+            Контактный телефон:
+            <input type="tel" name="phone-number" placeholder="Введите телефон">
+          </label>
+           <label class="form-review__label">
+            Электронная почта:
+            <input type="email" name="email-address" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <legend class="form-review__legend">Ваше общее впечатление:</legend>
+           <label class="form-review__label">
+            <input type="radio" name="raiting" checked="true">Скорее положительное
+          </label>
+           <label class="form-review__label">
+            <input type="radio" name="raiting">Скорее отрицательное
+          </label>
+           <label class="form-review__label">
+            <input type="radio" name="raiting">Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <legend class="form-review__legend">Посещенные достопримечательности:</legend>
+           <label class="form-review__label">
+            <input type="checkbox" name="raiting" checked="true">Мост Дьявола
+          </label>
+           <label class="form-review__label">
+            <input type="checkbox" name="raiting" checked="true">Слайд-парк
+          </label>
+           <label class="form-review__label">
+            <input type="checkbox" name="raiting">Гора-Колокол
+          </label>
+           <label class="form-review__label">
+            <input type="checkbox" name="raiting" checked="true">Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="form-review__fieldset">
+          <legend class="form-review__legend">Опишите свои эмоции:</legend>
+          <textarea name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
+        </fieldset>
+        <button class="btn form-review__btn" type="submit">Отпрвить отзыв</button>
+      </form>
     </main>
     <footer class="main-footer">
       <div class="hashtag">
