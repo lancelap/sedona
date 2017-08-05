@@ -1,33 +1,43 @@
 .main-nav {
   position: relative;
-  width: 320px;
   margin: 0 auto;
+  padding-bottom: 55px;
   background-color: $bg-white;
   color: $primary-color;
+
+  @media #{$tablet-width} {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
 }
 
 .main-nav__list{
   margin: 0;
   padding: 0;
+  font-size: 0;
   list-style: none;
-  background-color: $bg-lightblu;
   color: #ffffff;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-basis: 40%;
+  }
 }
 
 .main-nav__list-item {
-  display: block;
-  font-weight: bold;
-
   @media #{$tablet-width} {
-
+    flex-basis: 50%;
+    background-color: #ffffff;
   }
 }
 
 .main-nav__list-item a {
   display: block;
-  padding: 19px 21px;
+  padding: 20px 21px;
   padding-bottom: 16px;
-
+  font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: #ffffff;
@@ -36,37 +46,52 @@
   background-color: $bg-lightblu;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+
+  @media #{$tablet-width} {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+    border: none;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon-cross.svg');
+  background-size: 23px 21px;
+  background-position: center center;
+  cursor: pointer;
+
+  border: none;
+
+  @media #{$tablet-width} {
+    display: none;
+  }
 }
 
 @media #{$mobile-width-only} {
   .main-nav--closed .main-nav__list {
     display: none;
 
-    &--open {
+    &--opened {
       display: block;
     }
-  }
-
-  .main-nav__toggle {
-    position: absolute;
-    top: 11px;
-    right: 10px;
-    z-index: 2;
-
-    display: block;
-    width: 43px;
-    height: 41px;
-
-    font-size: 0;
-
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-image: url('../img/icon-cross.svg');
-    background-size: 23px 21px;
-    background-position: center center;
-    cursor: pointer;
-
-    border: none;
   }
 
   .main-nav--closed .main-nav__toggle {
@@ -81,17 +106,17 @@
   }
 }
 
-.main-nav__main-logo {
-  position: relative;
-  min-height: 56px;
-  text-align: center;
-  background-color: #ffffff;
+.main-nav__main-logo img{
+  width: 103px;
+  height: 83px;
 }
 
-.main-nav__main-logo img {
+.main-nav__main-logo {
   position: absolute;
-  top: 0;
+  bottom: -28px;
   left: 50%;
   z-index: 2;
+  width: 103px;
+  height: 83px;
   margin-left: -51px;
 }

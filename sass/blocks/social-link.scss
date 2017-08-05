@@ -1,0 +1,24 @@
+.social-link {
+  margin-right: 6px;
+  width: 46px;
+  height: 46px;
+  font-size: 0;
+  background-color: $bg-lightblu;
+}
+
+.social-link--tw {
+  @include social-link("../img/icon-twitter.svg");
+}
+
+.social-link--fb {
+  @include social-link("../img/icon-facebook.svg");
+}
+
+.social-link--yt {
+  @include social-link("../img/icon-youtube.svg");
+}
+
+.social-link--ha {
+  @include social-link("../img/htmlacademy.svg");
+}
+

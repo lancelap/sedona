@@ -1,0 +1,43 @@
+.video-box__title {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.video-box__desk {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.video-box__video {
+  margin: 0 auto;
+  width: 320px;
+  height: 190px;
+  background-image: url("../img/video-tablet.jpg");
+  background-size: cover;
+}
+
+@media #{$tablet-width} {
+  .video-box__desk {
+    width: 440px;
+    margin-bottom: 75px;
+  }
+
+  .video-box__video {
+    margin: 0 auto;
+    width: 650px;
+    height: 500px;
+    background-image: url("../img/video-tablet.jpg");
+    background-size: cover;
+  }
+}
+
+@media #{$desktop-width} {
+  .video-box__video {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/video-desktop.jpg");
+  }
+}

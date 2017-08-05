@@ -5,7 +5,8 @@
   background-image: url('../img/intro-triangle.svg'), url('../img/back-mobile.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom center;
-  background-size: auto 85px, auto 389px;
+  background-size: auto 85px, cover;
+  background-color: $bg-lightblu;
 
   &--inner-page {
     height: 160px;

@@ -7,7 +7,7 @@
 }
 
 @mixin container() {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 
   @media #{$tablet-width} {
@@ -23,4 +23,56 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin button() {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font: bold 18px/26px $font-stack;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border-style: none;
+  outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
+
+@mixin social-link($image)  {
+  background-image: url($image);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 14px 14px;
+}
+
+
+@mixin features-icon($image) {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-image: url($image);
+  background-size: 100% 100%;
+  background-color: #ffffff;
 }

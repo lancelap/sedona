@@ -10,28 +10,32 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <ul class="main-nav__list main-nav__list--margin-right">
           <li class="main-nav__list-item">
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item">
             <a href="photo.html">Фото и видео</a>
           </li>
+        </ul>
+        <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="forma.html">Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__list-item">
             <a href="#">Html Academy</a>
           </li>
         </ul>
-        <a class="main-nav__main-logo" href="index.html">
-          <img src="img/main-logo.svg" width="100" height="83" alt="Sedona logo">
-        </a>
-        <a class="main-nav__toggle">Открыть</a>
+        <div class="main-nav__main-logo">
+          <a href="index.html">
+            <img src="img/main-logo.svg" width="103" height="83" alt="Sedona logo">
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
       </nav>
-      <div class="intro-logo intro-logo--inner-page">
-        <img class="intro-logo__main-img intro-logo__main-img--inner-page" src="img/sedona-inner-page.svg" alt="Sedona mountains">
+      <div class="intro-logo">
+        <img class="intro-logo__main-img" src="img/sedona.svg" alt="Sedona mountains">
       </div>
     </header>
     <main>
@@ -106,17 +110,21 @@
       </form>
     </main>
     <footer class="main-footer">
-      <div class="hashtag">
+      <div class="main-footer__hashtag">
         <a href="#">#VISITSEDONA</a>
       </div>
-      <p class="main-footer-social">
+      <p class="main-footer__social">
         <span class="social-links">
-          <a href="" class="social-link social-link--tw">Twitter</a>
-          <a href="" class="social-link social-link--fb">Facebook</a>
-          <a href="" class="social-link social-link--yt">YouTube</a>
+          <a href="#" class="social-link social-link--tw">Twitter</a>
+          <a href="#" class="social-link social-link--fb">Facebook</a>
+          <a href="#" class="social-link social-link--yt">YouTube</a>
         </span>
       </p>
+      <div class="main-footer__design">
+        <a href="#" class="main-footer__htmlacademy">HTML Academy</a>
+      </div>
     </footer>
   </div>
+  <script src="../js/script.js"></script>
 </body>
 </html>
