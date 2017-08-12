@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Sedona</title>
 </head>
 <body>
@@ -40,7 +40,7 @@
         <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
       </nav>
       <div class="intro-logo">
-        <img class="intro-logo__main-img" alt="Sedona mountains" src="img/text-index.svg">
+        <img class="intro-logo__main-img" alt="Sedona mountains" src="img/text-sedona-index.svg">
       </div>
     </header>
     <main>
@@ -180,13 +180,33 @@
         </div>
         <p class="main-footer__social">
           <span class="social-links">
-            <a href="#" class="social-link social-link--tw">Twitter</a>
-            <a href="#" class="social-link social-link--fb">Facebook</a>
-            <a href="#" class="social-link social-link--yt">YouTube</a>
+            <a class="social-links__link social-links__link--tw" href="#" target="_blank" title="Twitter">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-twitter">
+                </use>
+              </svg>
+            </a>
+            <a class="social-links__link social-links__link--fb" href="#" target="_blank" title="Facebook">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+            <a class="social-links__link social-links__link--yt" href="#" target="_blank" title="YouTube">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-youtube">
+                </use>
+              </svg>
+            </a>
           </span>
         </p>
         <div class="main-footer__design">
-          <a href="#" class="main-footer__htmlacademy">HTML Academy</a>
+          <a href="#" class="main-footer__htmlacademy">
+            <svg aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-htmlacademy">
+            </use>
+          </svg>
+        </a>
         </div>
       </footer>
     </div>

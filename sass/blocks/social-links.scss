@@ -3,3 +3,40 @@
   flex-basis: 33%;
   justify-content: center;
 }
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  width: 46px;
+  height: 46px;
+  background-color: $bg-lightblu;
+  fill: #ffffff;
+
+  &--tw svg {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--fb svg {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--yt svg {
+    width: 18px;
+    height: 14px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+
+
