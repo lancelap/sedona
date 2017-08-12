@@ -29,12 +29,17 @@
         </ul>
         <div class="main-nav__main-logo">
           <a href="index.html">
-            <img src="img/main-logo.svg" width="103" height="83" alt="Sedona logo">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/logo-desktop.svg">
+              <img src="img/main-logo.svg" alt="Sedona logo">
+            </picture>
           </a>
         </div>
         <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
       </nav>
-      <div class="intro-logo">
+      <div class="intro-logo  intro-logo--inner-page">
         <img class="intro-logo__main-img" src="img/sedona.svg" alt="Sedona mountains">
       </div>
     </header>
@@ -51,7 +56,24 @@
       <section class="photoes">
         <ul class="photoes__list">
           <li class="photoes__photo-item photoes__photo-item--big">
-            <img class="photoes__img" src="img/photo-1-mobile.jpg" alt="Фото 1" width="280" height="280">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-1-desktop@1x.jpg 1x,
+                        img/photo-1-desktop@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-1-tablet@1x.jpg 1x,
+                        img/photo-1-tablet@2x.jpg 2x">
+              <img
+                class="photoes__img"
+                src="img/photo-1-mobile@1x.jpg"
+                srcset="img/photo-1-mobile@1x.jpg 1x,
+                        img/photo-1-mobile@2x.jpg 2x"
+                alt="Фото 1"
+                width="280"
+                height="280">
+            </picture>
             <div class="photoes__desc">
               <h2 class="photoes__title">неродные просторы</h2>
               <span class="photoes__author">Борис</span>
@@ -59,7 +81,24 @@
             </div>
           </li>
           <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-2-mobile.jpg" alt="Фото 2" width="280" height="280">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-2-desktop@1x.jpg 1x,
+                        img/photo-2-desktop@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-2-tablet@1x.jpg 1x,
+                        img/photo-2-tablet@2x.jpg 2x">
+              <img
+                class="photoes__img"
+                src="img/photo-2-mobile@1x.jpg"
+                srcset="img/photo-2-mobile@1x.jpg 1x,
+                        img/photo-2-mobile@2x.jpg 2x"
+                alt="Фото 2"
+                width="280"
+                height="280">
+            </picture>
             <div class="photoes__desc">
               <h2 class="photoes__title">Местная растительность</h2>
               <span class="photoes__author">Сергей</span>
@@ -67,7 +106,24 @@
             </div>
           </li>
           <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-3-mobile.jpg" alt="Фото 3" width="280" height="280">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-3-desktop@1x.jpg 1x,
+                        img/photo-3-desktop@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-3-tablet@1x.jpg 1x,
+                        img/photo-3-tablet@2x.jpg 2x">
+              <img
+                class="photoes__img"
+                src="img/photo-3-mobile@1x.jpg"
+                srcset="img/photo-3-mobile@1x.jpg 1x,
+                        img/photo-3-mobile@2x.jpg 2x"
+                alt="Фото 2"
+                width="280"
+                height="280">
+            </picture>
             <div class="photoes__desc">
               <h2 class="photoes__title">Дорога на север</h2>
               <span class="photoes__author">Петр</span>
@@ -75,7 +131,24 @@
             </div>
           </li>
           <li class="photoes__photo-item">
-            <img class="photoes__img" src="img/photo-4-mobile.jpg" alt="Фото 4" width="280" height="280">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-4-desktop@1x.jpg 1x,
+                        img/photo-4-desktop@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-4-tablet@1x.jpg 1x,
+                        img/photo-4-tablet@2x.jpg 2x">
+              <img
+                class="photoes__img"
+                src="img/photo-4-mobile@1x.jpg"
+                srcset="img/photo-4-mobile@1x.jpg 1x,
+                        img/photo-4-mobile@2x.jpg 2x"
+                alt="Фото 2"
+                width="280"
+                height="280">
+            </picture>
             <div class="photoes__desc">
               <h2 class="photoes__title">Мост дьявола</h2>
               <span class="photoes__author">Антон</span>

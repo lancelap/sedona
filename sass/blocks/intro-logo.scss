@@ -2,7 +2,10 @@
   position: relative;
   height: 389px;
 
-  background-image: url('../img/intro-triangle.svg'), url('../img/back-mobile.jpg');
+  background-image: url('../img/intro-triangle.svg'), url('../img/bg-back-mobile@1x.jpg');
+  @media #{$retina} {
+    background-image: url('../img/intro-triangle.svg'), url('../img/bg-back-mobile@2x.jpg');
+  }
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom center;
   background-size: auto 85px, cover;
@@ -10,20 +13,6 @@
 
   &--inner-page {
     height: 160px;
-  }
-
-  @media #{$tablet-width} {
-    height: 518px;
-    background-image: url('../img/intro-triangle.svg'), url('../img/back-desktop.jpg');
-    background-size: auto 59px, auto auto;
-
-    &--inner-page {
-      height: 290px;
-    }
-  }
-
-  @media #{$desktop-width} {
-    background-image: url('../img/intro-triangle.svg'), url('../img/back-desktop.jpg');
   }
 }
 
@@ -34,24 +23,36 @@
   width: 280px;
   height: 214px;
   margin-left: -140px;
+}
 
-  &--inner-page {
-    top: 50px;
-    height: 38px;
+.intro-logo--inner-page .intro-logo__main-img {
+  top: 50px;
+  height: 40px;
+}
+
+@media #{$tablet-width} {
+  .intro-logo {
+    height: 518px;
+    background-image: url('../img/intro-triangle.svg'), url('../img/bg-back-desktop@1x.jpg');
+    @media #{$retina} {
+      background-image: url('../img/intro-triangle.svg'), url('../img/bg-back-desktop@2x.jpg');
+    }
+    background-size: auto 59px, cover;
+
+    &--inner-page {
+      height: 290px;
+    }
   }
 
-  @media #{$tablet-width} {
+  .intro-logo__main-img {
     width: 460px;
     height: 350px;
     top: 78px;
     margin-left: -215px;
+  }
 
-    &--inner-page {
+  .intro-logo--inner-page .intro-logo__main-img {
       top: 100px;
       height: 80px;
-    }
   }
 }
-
-
-

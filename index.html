@@ -29,13 +29,18 @@
         </ul>
         <div class="main-nav__main-logo">
           <a href="index.html">
-            <img src="img/main-logo.svg" width="103" height="83" alt="Sedona logo">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/logo-desktop.svg">
+              <img src="img/main-logo.svg" alt="Sedona logo">
+            </picture>
           </a>
         </div>
         <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
       </nav>
       <div class="intro-logo">
-        <img class="intro-logo__main-img" src="img/sedona.svg" alt="Sedona mountains">
+        <img class="intro-logo__main-img" alt="Sedona mountains" src="img/text-index.svg">
       </div>
     </header>
     <main>
@@ -58,7 +63,21 @@
             <p>СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="features__photo">
-            <!-- <img src="img/photo-city@1x.jpg"  alt="Sedona City"> -->
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-city@1x.jpg 1x,
+                        img/photo-city@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-city-tablet@1x.jpg 1x,
+                        img/photo-city-tablet@2x.jpg 2x">
+              <img
+                src="img/photo-city-mobile@1x.jpg"
+                srcset="img/photo-city-mobile@1x.jpg 1x,
+                        img/photo-city-mobile@2x.jpg 2x"
+                alt="Sedona City">
+            </picture>
           </div>
         </li>
         <li class="features__item features__item--extra-list">
@@ -89,7 +108,21 @@
             <p>Да, по нему можно пройти!&nbsp;Если конечно вы осмелитесь</p>
           </div>
           <div class="features__photo features__photo--reverse-order">
-            <!-- <img src="img/photo-city@1x.jpg"  alt="Sedona City"> -->
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/photo-bridge@1x.jpg 1x,
+                        img/photo-bridge@2x.jpg 2x">
+              <source
+                media="(min-width:768px)"
+                srcset="img/photo-bridge-tablet@1x.jpg 1x,
+                        img/photo-bridge-tablet@2x.jpg 2x">
+              <img
+                src="img/photo-bridge-mobile@1x.jpg"
+                srcset="img/photo-bridge-mobile@1x.jpg 1x,
+                        img/photo-bridge-mobile@2x.jpg 2x"
+                alt="Sedona bridge">
+            </picture>
           </div>
         </li>
         <li class="features__item">
@@ -123,9 +156,22 @@
         Укажите предполагаемые даты поездки<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a class="hotel-search__btn" href="#">Найти гостиницу</a>
+      <a class="btn btn--hotel" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="img/bg-map-desktop@1x.jpg
+                    ">
+          <source
+            media="(min-width:768px)"
+            srcset="img/bg-map-tablet@1x.jpg">
+          <img
+            src="img/photo-bridge-mobile@1x.jpg"
+            srcset="img/bg-map-mobile@1x.jpg 1x"
+            alt="Sedona map">
+        </picture>
     </section>
       </main>
       <footer class="main-footer">
