@@ -1029,8 +1029,7 @@ img {
 
 .map {
   display: block;
-  height: 340px;
-  background-image: url("../img/map-desktop.jpg"); }
+  height: 340px; }
 
 .main-footer {
   box-sizing: border-box;
