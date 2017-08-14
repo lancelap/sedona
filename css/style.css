@@ -972,6 +972,8 @@ img {
     color: #000000; }
   .form-review__textarea::placeholder {
     color: #000000; }
+  .form-review__textarea:hover {
+    background-color: #e5e5e5; }
   .form-review__textarea:focus {
     background-color: #ffffff;
     outline: 4px solid #e6e6e6; }
