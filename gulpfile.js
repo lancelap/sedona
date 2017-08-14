@@ -106,7 +106,7 @@ gulp.task('serve', function() {
       baseDir: 'build'
     },
     notify: false,
-    open: false,
+    open: true,
     port: 8080
   });
   gulp.watch('sass/**/*.scss', ['style']);

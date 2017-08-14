@@ -9,40 +9,49 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--no-js">
-        <ul class="main-nav__list main-nav__list--margin-right">
-          <li class="main-nav__list-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">Html Academy</a>
-          </li>
-        </ul>
-        <div class="main-nav__main-logo">
-          <a href="index.html">
-            <picture>
-              <source
-                media="(min-width:1200px)"
-                srcset="img/logo-desktop.svg">
-              <img src="img/main-logo.svg" alt="Sedona logo">
-            </picture>
-          </a>
-        </div>
-        <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
-      </nav>
-      <div class="intro-logo  intro-logo--inner-page">
-        <img class="intro-logo__main-img" src="img/sedona.svg" alt="Sedona mountains">
-      </div>
-    </header>
+      <header class="page-header">
+          <nav class="main-nav main-nav--closed main-nav--no-js">
+            <ul class="main-nav__list main-nav__list--margin-right">
+              <li class="main-nav__list-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="photo.html">Фото и видео</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#">Html Academy</a>
+              </li>
+            </ul>
+            <div class="main-nav__main-logo">
+              <a href="index.html">
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="img/logo-desktop.svg">
+                  <img src="img/main-logo.svg" alt="Sedona logo">
+                </picture>
+              </a>
+            </div>
+            <a class="main-nav__toggle">
+              <svg class="main-nav__icon-menu" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-menu">
+                </use>
+              </svg>
+              <svg class="main-nav__icon-cross" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-cross">
+                </use>
+              </svg>
+            </a>
+          </nav>
+          <div class="intro-logo">
+            <img class="intro-logo__main-img" alt="Sedona mountains" src="img/text-sedona-index.svg">
+          </div>
+        </header>
     <main>
       <div class="page-headline">
         <h1 class="page-headline__title">
@@ -77,7 +86,12 @@
             <div class="photoes__desc">
               <h2 class="photoes__title">неродные просторы</h2>
               <span class="photoes__author">Борис</span>
-              <span class="photoes__likes">1350</span>
+              <span class="photoes__likes">1196
+                <svg class="photoes__icon-like" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-like">
+                  </use>
+                </svg>
+              </span>
             </div>
           </li>
           <li class="photoes__photo-item">
@@ -102,7 +116,12 @@
             <div class="photoes__desc">
               <h2 class="photoes__title">Местная растительность</h2>
               <span class="photoes__author">Сергей</span>
-              <span class="photoes__likes">143</span>
+              <span class="photoes__likes">143
+                <svg class="photoes__icon-like" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-like">
+                  </use>
+                </svg>
+              </span>
             </div>
           </li>
           <li class="photoes__photo-item">
@@ -127,7 +146,12 @@
             <div class="photoes__desc">
               <h2 class="photoes__title">Дорога на север</h2>
               <span class="photoes__author">Петр</span>
-              <span class="photoes__likes">96</span>
+              <span class="photoes__likes">96
+                <svg class="photoes__icon-like" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-like">
+                  </use>
+                </svg>
+              </span>
             </div>
           </li>
           <li class="photoes__photo-item">
@@ -152,7 +176,12 @@
             <div class="photoes__desc">
               <h2 class="photoes__title">Мост дьявола</h2>
               <span class="photoes__author">Антон</span>
-              <span class="photoes__likes">254</span>
+              <span class="photoes__likes">254
+                <svg class="photoes__icon-like" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-like">
+                  </use>
+                </svg>
+              </span>
             </div>
           </li>
         </ul>
@@ -162,7 +191,21 @@
         <p class="video-box__desk">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <video class="video-box__video" src=""></video>
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="img/video-desktop@1x.jpg 1x,
+                    img/video-desktop@2x.jpg 2x">
+          <source
+            media="(min-width:768px)"
+            srcset="img/video-tablet@1x.jpg 1x,
+                    img/video-tablet@2x.jpg 2x">
+          <img
+            src="img/video-mobile@1x.jpg"
+            srcset="img/video-mobile@2x.jpg 1x,
+                    img/video-mobile@2x.jpg 2x"
+            alt="Sedona City">
+        </picture>
       </section>
       </main>
       <footer class="main-footer">
@@ -171,13 +214,33 @@
         </div>
         <p class="main-footer__social">
           <span class="social-links">
-            <a href="#" class="social-link social-link--tw">Twitter</a>
-            <a href="#" class="social-link social-link--fb">Facebook</a>
-            <a href="#" class="social-link social-link--yt">YouTube</a>
+            <a class="social-links__link social-links__link--tw" href="#" target="_blank" title="Twitter">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-twitter">
+                </use>
+              </svg>
+            </a>
+            <a class="social-links__link social-links__link--fb" href="#" target="_blank" title="Facebook">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+            <a class="social-links__link social-links__link--yt" href="#" target="_blank" title="YouTube">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-youtube">
+                </use>
+              </svg>
+            </a>
           </span>
         </p>
         <div class="main-footer__design">
-          <a href="#" class="main-footer__htmlacademy">HTML Academy</a>
+          <a href="#" class="main-footer__htmlacademy">
+            <svg aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-htmlacademy">
+              </use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>

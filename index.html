@@ -37,7 +37,16 @@
             </picture>
           </a>
         </div>
-        <button class="main-nav__toggle" type="menu">Кнопка открытия меню</button>
+        <a class="main-nav__toggle">
+          <svg class="main-nav__icon-menu" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-menu">
+            </use>
+          </svg>
+          <svg class="main-nav__icon-cross" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-cross">
+            </use>
+          </svg>
+        </a>
       </nav>
       <div class="intro-logo">
         <img class="intro-logo__main-img" alt="Sedona mountains" src="img/text-sedona-index.svg">
@@ -82,21 +91,36 @@
         </li>
         <li class="features__item features__item--extra-list">
           <div class="features__text">
-            <span class="features-icon--house"></span>
+            <div class="features-icon">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-house">
+                </use>
+              </svg>
+            </div>
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
         </li>
         <li class="features__item features__item--extra-list">
           <div class="features__text">
-            <span class="features-icon--gift"></span>
+            <div class="features-icon">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-gift">
+                </use>
+              </svg>
+            </div>
             <h2>СУВЕНИРЫ</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </li>
         <li class="features__item features__item--extra-list">
           <div class="features__text">
-            <span class="features-icon--food"></span>
+            <div class="features-icon">
+              <svg aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-burger">
+                </use>
+              </svg>
+            </div>
             <h2>Еда</h2>
             <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
@@ -158,21 +182,19 @@
       </p>
       <a class="btn btn--hotel" href="#">Найти гостиницу</a>
     </section>
-    <section class="map">
+    <div class="map">
         <picture>
           <source
             media="(min-width:1200px)"
-            srcset="img/bg-map-desktop@1x.jpg
-                    ">
+            srcset="img/bg-map-desktop@1x.jpg">
           <source
             media="(min-width:768px)"
             srcset="img/bg-map-tablet@1x.jpg">
           <img
-            src="img/photo-bridge-mobile@1x.jpg"
-            srcset="img/bg-map-mobile@1x.jpg 1x"
+            src="img/bg-map-mobile@1x.jpg"
             alt="Sedona map">
         </picture>
-    </section>
+      </div>
       </main>
       <footer class="main-footer">
         <div class="main-footer__hashtag">
@@ -203,10 +225,10 @@
         <div class="main-footer__design">
           <a href="#" class="main-footer__htmlacademy">
             <svg aria-hidden="true">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-htmlacademy">
-            </use>
-          </svg>
-        </a>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbols.svg#icon-htmlacademy">
+              </use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
